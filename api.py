@@ -25,10 +25,10 @@ pcrBB = make_pipeline(StandardScaler(), PCA(n_components=200), LinearRegression(
 pcrunknownDH  = make_pipeline(StandardScaler(), PCA(n_components=200), LinearRegression())
 
 
-pcrAA = load('saved_models/pcrAA.joblib')
-pcrAB = load('saved_models/pcrAB.joblib') 
-pcrBA = load('saved_models/pcrBA.joblib') 
-pcrBB = load('saved_models/pcrBB.joblib') 
+pcrAA = load('./saved_models/pcrAA.joblib')
+pcrAB = load('./saved_models/pcrAB.joblib') 
+pcrBA = load('./saved_models/pcrBA.joblib') 
+pcrBB = load('./saved_models/pcrBB.joblib') 
 pcrunknownDH = load('saved_models/pcrunknownDH.joblib') 
 
 @app.route('/predict', methods=['POST'])
