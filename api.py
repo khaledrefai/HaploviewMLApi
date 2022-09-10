@@ -47,7 +47,3 @@ def predict():
         retList.append(retValue)         
      print(len(retList))
      return jsonify( retList) 
-
-
-if __name__ == '__main__':
-    app.run(debug=True, port=5000)
